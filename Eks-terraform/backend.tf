@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "ajay-mrcloudbook777" # Replace with your actual S3 bucket name
-    key    = "EKS/terraform.tfstate"
-    region = "ap-south-1"
+    bucket = "firsthell" # Replace with your actual S3 bucket name
+    key    = "terraform-state/terraform.tfstate"
+    region = "us-east-1"
+    encrypt = true
   }
 }
